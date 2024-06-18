@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+<head>
+    @include('./partials/head.html', {
+    "title": "Главная",
+    css: 'main',
+    js: 'main'
+    })
+</head>
+
+<body class="page__body">
+    <div class="site-container">
+        @include('./partials/header.html')
+        <main class="main">
+            <div class="container">
+              
+            </div>
+        </main>
+        @include('./partials/footer.html')
+    </div>
+
+
+    <div class="modal-container">
+        @include('./partials/popups/city.html')
+    </div>
+
+</body>
+
+
+</html>
