@@ -1,0 +1,19 @@
+.tenant-info {
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__title {
+        max-width: 720px;
+        text-align: center;
+        span{
+            color: var(--gray);
+        }
+    }
+    &__image{
+        margin-top: 40px;
+    }
+}

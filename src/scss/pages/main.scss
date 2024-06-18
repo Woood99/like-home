@@ -14,7 +14,7 @@
 
 
 // small components
-// @import "../small-components/component";
+@import "../small-components/card-primary";
 
 
 // =============================================================================================================
@@ -28,8 +28,16 @@
 // =============================================================================================================
 
 
-// pages
-// @import "../components/page";
+@import "../components/hero";
+@import "../components/tenant-info";
+@import "../components/difference";
+@import "../components/how-works";
+@import "../components/tenant-banner";
+@import "../components/advantages";
+@import "../components/comparison";
+@import "../components/applic-form";
+@import "../components/faq";
+@import "../components/qr";
 
 
 // =============================================================================================================

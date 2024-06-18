@@ -1,0 +1,52 @@
+.how-works {
+    margin-top: -100px;
+    padding-top: 134px;
+    border-radius: 100px 100px 0 0;
+    background-color: var(--white);
+    &__title {
+        text-align: center;span{
+            color: var(--gray);
+        }
+    }
+    &__steps {
+        max-width: 1191px;
+        margin: 90px auto 0;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-column-gap: 48px;
+        grid-row-gap: 93px;
+    position: relative;
+    }
+    &__line{
+        position: absolute;
+        z-index: 1;
+        top: 25px;
+        left: 109px;
+    }
+    &__step {
+    }
+
+    &__badge {
+       display: inline-flex;
+       align-items: center;
+       justify-content: center;
+        height: 59px;
+        padding: 0 24px;
+        font-weight: 700;
+font-size: 22px;
+line-height: 1.22;
+color: #F34D24;
+background-color: #F8F8F8;
+border-radius: 138px;
+
+position: relative;
+z-index: 2;
+    }
+
+    &__text {
+        margin-top: 24px;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.35;
+    }
+}

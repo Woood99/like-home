@@ -17,55 +17,52 @@
 }
 
 .btn-primary {
-    --bg: #2b67e9;
-    --color: #fff;
-    --bg-focus: black;
-    --bg-hover: black;
-    --bg-active: black;
-    --shadow: 0px 15px 20px rgba(35, 125, 233, 0.28);
-    --bg-disabled: rgba(0, 0, 0, 0.15);
+    height: 76px;
+    padding: 0 60px;
 
-    background-color: var(--bg);
-    padding: 16px 24px;
-    border-radius: 12px;
+    color: var(--white);
+    background-color: var(--black);
 
-    display: flex;
-    align-items: center;
+    border-radius: 32px;
 
-    &__text {
-        text-transform: uppercase;
-        color: var(--color);
-    }
+    font-size: var(--second-font);
+
 
     @media (min-width:$desktop-min) {
-        &.focus-visible {
-            background-color: var(--bg-focus);
-        }
-
         &:hover {
-            background-color: var(--bg-hover);
-        }
-
-        &:active {
-            box-shadow: var(--shadow);
-            background-color: var(--bg-active);
+            color: var(--white);
+            background-color: var(--orange);
         }
     }
 
-    &:disabled {
-        background-color: var(--bg-disabled);
+    &:active {
+        color: var(--white);
+        background-color: var(--orange);
+    }
+
+    &.focus-visible {
+        color: var(--white);
+        background-color: var(--blue);
+    }
+
+    @media (max-width:$desktop) {
+        height: 70px;
+        border-radius: 24px;
+    }
+}
+
+.btn-small {
+    border-radius: 20px;
+    height: 48px;
+    padding: 0 26px;
+    background-color: var(--black);
+    color: var(--white);
+
+    font-size: var(--default-font);
+    white-space: nowrap;
+    &:disabled{
+        background-color: #f1f0f0;
+        color: var(--gray);
         pointer-events: none;
-        cursor: default;
     }
-
-    &.theme_warning {
-        --bg: #e03023;
-        --color: #f1dddd;
-        --bg-focus: #7c2c2c;
-        --bg-hover: #7c2c2c;
-        --bg-active: #7c2c2c;
-        --shadow: 0px 15px 20px rgba(233, 36, 29, 0.2);
-        --bg-disabled: rgba(235, 117, 117, 0.15);
-    }
-
 }

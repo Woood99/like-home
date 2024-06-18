@@ -1,0 +1,26 @@
+.tenant-banner{
+    margin-top: 184px;
+    --gap-bottom: 100px;
+
+    min-height: calc(800px + var(--gap-bottom));
+    height: calc(100vh + var(--gap-bottom));
+    max-height: calc(2400px + var(--gap-bottom));
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 100px 100px 0 0;
+    &__wrapper{
+        max-width: 575px;
+        margin-left: auto;
+        transform: translateY(200px);
+    }
+    &__title{
+        line-height: 1.24;
+        span{
+            color: #F34D24;
+        }
+    }
+    &__btn{
+        margin-top: 48px;
+        padding: 0 97px;
+    }
+}

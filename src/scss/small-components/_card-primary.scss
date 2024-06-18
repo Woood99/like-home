@@ -1,0 +1,35 @@
+.card-primary {
+    background-color: var(--white);
+    box-shadow: 0 32px 51px 0 rgba(164, 35, 4, 0.22);
+    padding: 20px 20px 42px;
+    border-radius: 46px;
+    position: relative;
+    &__badge{
+        position: absolute;
+        top: -50px;
+        right: 50px;
+    }
+    &__image {
+        border-radius: 33px;
+        overflow: hidden;
+    }
+    &__content{
+        margin: 20px 8px 0;
+    }
+    &__title {
+        font-weight: 600;
+        font-size: var(--third-font);
+        line-height: 1.24;
+        color: #050505;
+        span{
+            color: #3364ea;
+        }
+    }
+
+    &__text {
+        margin-top: 16px;
+        font-size: var(--second-font);
+        font-weight: 500;
+        line-height: 1.42;
+    }
+}

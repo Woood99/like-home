@@ -4,13 +4,20 @@
     // settings
     --min-width: 320px;
 
-    --content-width: 1200px;
+    --content-width: 1296px;
+    --content-width-second: 1076px;
+
     --container-padding: 15px;
     --container-width: calc(var(--content-width) + (var(--container-padding) * 2));
+    --container-width-second: calc(var(--content-width-second) + (var(--container-padding) * 2));
 
     // font
-    --font-family: "fontFamily";
-    --default-fz: 14px;
+    --font-family: "Inter", sans-serif;
+    --second-family: "Inter Tight", sans-serif;
+
+    --default-font: 16px;
+    --second-font: 18px;
+    --third-font: 22px;
 
     // color main
     --page-bg: #fff;
@@ -19,8 +26,15 @@
     // color other
     --black: #000;
     --white: #fff;
-    --red: #e01717;
-    --blue: #2b67e9;
+    
+    --gray: #A2A2A2;
+    --orange: #f86226;
+
+    @media (max-width:$desktop){
+        --default-font: 15px;
+        --second-font: 17px;
+        --third-font: 20px;  
+    }
 }
 
 // ============================================================

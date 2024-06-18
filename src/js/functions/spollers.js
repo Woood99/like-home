@@ -3,7 +3,7 @@ import {
     _slideToggle,
     _displayFadeUp,
     _displayFadeToggle
-} from "../modules/slide";
+} from "../modules/slide.js";
 
 export default function WdSpoller(element) {
     if (!element) return;
@@ -63,6 +63,7 @@ class Spoller {
     close(item) {
         const body = this.getItemBody(item);
         item.classList.remove('_active');
+        item.querySelector(`[${this.attributeNames.button}]`).classList.remove('_active');
         if (this.animation === 'display') {
             _displayFadeUp(body, this.speed);
             return
@@ -72,6 +73,7 @@ class Spoller {
 
     toggle(item) {
         const body = this.getItemBody(item);
+        item.querySelector(`[${this.attributeNames.button}]`).classList.toggle('_active');
         item.classList.toggle('_active');
         if (this.animation === 'display') {
             _displayFadeToggle(body, this.speed);
@@ -85,15 +87,3 @@ class Spoller {
     }
 }
 
-
-// const spollers = document.querySelectorAll('[data-spollers]');
-// spollers.forEach(spoller => WdSpoller(spoller));
-
-/* <div data-spollers class="spollers">
-    <div class="spollers__item" data-spollers-item>
-        <button type="button" data-spollers-btn class="btn btn-reset spollers__title">Заголовок спойлера 1</button>
-        <div class="spollers__body" data-spollers-body hidden>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur vel eius illum, modi facere nisi asperiores suscipit hic ea recusandae perspiciatis optio magni mollitia dolor doloremque cupiditate id. Beatae, asperiores?
-        </div>
-    </div>
-</div> */

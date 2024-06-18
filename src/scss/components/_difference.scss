@@ -1,0 +1,49 @@
+.difference {
+    margin-top: calc(60px * 2);
+    background-color: var(--orange);
+    border-radius: 100px 100px 0 0;
+
+    padding-bottom: calc(157px + 100px);
+
+    &__wrapper {
+        transform: translateY(-60px);
+    }
+
+    &__cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 24px;
+        grid-row-gap: 32px;
+    }
+
+    &__card {
+        transition: transform $transitionSpeed $transitionFunction;
+
+        @media (min-width:$desktop-min) {
+            &:hover {
+                transform: scale(1.05);
+            }
+        }
+
+        &:nth-child(1),
+        &:nth-child(3) {
+            transform: translateY(-44px);
+
+            @media (min-width:$desktop-min) {
+                &:hover {
+                    transform: scale(1.05) translateY(-44px);
+                }
+            }
+        }
+    }
+
+    &__title {
+        margin-top: 60px;
+        text-align: center;
+        color: var(--white);
+
+        span {
+            opacity: 0.5;
+        }
+    }
+}

@@ -1,97 +1,76 @@
 .checkbox {
     position: relative;
-    user-select: none;
-    cursor: pointer;
-    --size: 15px;
-    --gap: 10px;
-    --size-icon: 10px;
 
-    display: flex;
-    align-items: start;
-    gap: var(--gap);
-
-    --border-color: #b3bcc5;
-
-    &__field {
-        appearance: none;
+    &__input {
         position: absolute;
         width: 0;
         height: 0;
         opacity: 0;
 
-     @media (min-width:$desktop-min){
-        &:hover {
-            +.checkbox__checkmark {
-                svg {
-                    stroke: var(--border-color);
-                }
-            }
-        } 
-     }
-
-        &:checked {
-            +.checkbox__checkmark {
-                background-color: var(--blue);
-                border-color: var(--blue);
-
-                svg {
-                    stroke: var(--white);
-                }
-            }
-        }
-
-        &:disabled {
-            +.checkbox__checkmark {
-                opacity: 0.4;
-                pointer-events: none;
-            }
-
-            &:checked {
-                +.checkbox__checkmark {
-                    opacity: 0.75;
-                }
-            }
-        }
-
-        @media (min-width:$desktop-min) {
-            &.focus-visible {
-                +.checkbox__checkmark {
-                    background-color: #2776dd;
-                    border-color: var(--border-color);
-                }
-            }
+        &:checked+.checkbox__label:after {
+            transform: scale(1);
         }
     }
 
-    &__checkmark {
-        flex: 0 0 var(--size);
-        width: var(--size);
-        height: var(--size);
-
-        border: 2px solid var(--border-color);
-        border-radius: 4px;
-        background-color: var(--white);
-
-        display: flex;
+    &__label {
+        cursor: pointer;
+        display: inline-flex;
         align-items: center;
-        justify-content: center;
+        position: relative;
 
-        transition: border $transitionSpeed $transitionFunction,
-            background-color $transitionSpeed $transitionFunction;
-
-        svg {
-            width: var(--size-icon);
-            height: var(--size-icon);
-            fill: none;
-            stroke: transparent;
-            transition: stroke $transitionSpeed $transitionFunction;
+        &:before {
+            content: "";
+            align-self: flex-start;
+            flex: 0 0 20px;
+            width: 20px;
+            height: 20px;
+            border: 1px solid #D0D5DD;
+            border-radius: 6px;
+            transition: border $transitionSpeed $transitionFunction;
+            position: relative;
+            top: 0px;
+            @media (max-width:$desktop){
+                border-radius: 4.5px;
+                width: 15px;
+                height: 15px;
+                flex: 0 0 15px;
+            }
         }
+
+        &::after {
+            content: '';
+            background-color: var(--black);
+            flex: 0 0 14px;
+            width: 14px;
+            height: 14px;
+            position: absolute;
+            top: 3px;
+            left: 3px;
+            border-radius: 5px;
+            transform: scale(0);
+            transition: transform $transitionSpeed $transitionFunction;
+            @media (max-width:$desktop){
+                width: 10px;
+                height: 10px;
+            top: 2.5px;
+            left: 2.5px;
+            border-radius: 3.5px;
+            }
+        }
+
     }
 
-    &__content {}
+    &__text {
+        margin-left: 12px;
+        color: var(--black);
+        font: var(--text-3);
+        a {
+            text-decoration: underline;
+            transition: color $transitionSpeed $transitionFunction;
 
-    &--disabled {
-        cursor: default;
-        user-select: auto;
+            &:hover {
+                color: var(--red);
+            }
+        }
     }
 }

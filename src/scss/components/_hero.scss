@@ -1,0 +1,55 @@
+.hero {
+
+    &__wrapper {
+        position: relative;
+    }
+
+    &__image {
+        position: absolute;
+
+        &--1 {
+            left: 0;
+            top: 31px;
+        }
+
+        &--2 {
+            top: 0;
+            right: 0;
+        }
+    }
+
+    &__info {
+        margin: 0 auto;
+        max-width: 807px;
+        text-align: center;
+        position: relative;
+        z-index: 2;
+    }
+
+    &__title {
+        span {
+            color: var(--orange);
+        }
+    }
+
+    &__text {
+        margin: 24px auto 0;
+        max-width: 565px;
+
+        p {
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 1.5;
+        }
+    }
+
+    &__btn {
+        margin-top: 70px;
+        padding: 0 97px;
+    }
+}
+
+.btn-primary {
+
+    &__text {}
+}

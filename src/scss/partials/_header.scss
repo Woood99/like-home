@@ -1,3 +1,48 @@
-.header{
-   
+.header {
+    height: 96px;
+    border-bottom: 1px solid #e7e7e7;
+
+    &__wrapper{
+        display: flex;
+        align-items: center;
+        height: 100%;
+    }
+
+    &__logo {
+        min-width: 125px;
+    }
+
+    &__nav {
+        margin: 0 59px;
+    }
+
+    &__btn {
+        margin-left: auto;
+    }
+}
+
+.header-nav {
+
+    &__list {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 28px;
+    }
+
+    &__item {
+    }
+
+    &__link {
+        font-size: var(--default-font);
+        font-weight: 500;
+        line-height: 1.25;
+        white-space: nowrap;
+        transition: color $transitionSpeed $transitionFunction;
+        @media (min-width:$desktop-min){
+             &:hover{
+                color: var(--orange);
+             } 
+        }
+    }
 }

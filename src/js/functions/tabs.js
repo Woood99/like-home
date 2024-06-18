@@ -1,6 +1,4 @@
-import {
-    _displayFadeDown
-} from "../modules/slide";
+import { _displayFadeDown } from "../modules/slide.js";
 
 export default function WdTab(element) {
     if (!element) return;
@@ -99,31 +97,6 @@ class Tabs {
 
 }
 
-// const tabs = document.querySelectorAll('[data-tabs]');
-// tabs.forEach(tab => WdTab(tab));
 
 
-/* <div class="tabs" data-tabs>
-<nav data-tabs-buttons class="tabs__nav">
-    <button type="button" class="tabs__button">
-        tab 1
-    </button>
-    <button type="button" class="tabs__button">
-        tab 2
-    </button>
-    <button type="button" class="tabs__button">
-        tab 3
-    </button>
-</nav>
-<div data-tabs-content class="tabs__content">
-    <div class="tabs__panel" hidden>
-        content 1
-    </div>
-    <div class="tabs__panel" hidden>
-        content 2
-    </div>
-    <div class="tabs__panel" hidden>
-        content 3
-    </div>
-</div>
-</div> */
+

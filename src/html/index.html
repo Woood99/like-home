@@ -13,11 +13,20 @@
     <div class="site-container">
         @include('./partials/header.html')
         <main class="main">
-            <div class="container">
-              
-            </div>
+            @include('./components/hero.html')
+            @include('./components/tenant-info.html')
+            @include('./components/difference.html')
+            @include('./components/how-works.html')
+            @include('./components/tenant-banner.html')
+            @include('./components/advantages.html')
+            @include('./components/comparison.html')
+            @include('./components/applic-form.html')
+            @include('./components/faq.html')
+            @include('./components/qr.html')
         </main>
-        @include('./partials/footer.html')
+        @include('./partials/footer.html',{
+            class: "mt-[170px]",
+        })
     </div>
 
 
