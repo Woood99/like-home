@@ -8,6 +8,9 @@
         height: 100%;
         @media (max-width:$desktop){
              justify-content: space-between; 
+             >.header__btn{
+                display: none;
+             }
         }
     }
 
