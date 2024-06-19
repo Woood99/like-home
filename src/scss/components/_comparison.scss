@@ -26,9 +26,10 @@
             font-size: var(--second-font);
         }
     }
-
-    &__btns{
+    &__tabs{
         margin-top: 56px;
+    }
+    &__btns{
         display: flex;
         align-items: center;
         justify-content: end;
@@ -51,7 +52,7 @@
 
         border-radius: 32px;
 
-        &._orange{
+        &._active{
             background-color: var(--orange);
             color: var(--white);
         }
