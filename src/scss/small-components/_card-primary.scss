@@ -8,13 +8,25 @@
         position: absolute;
         top: -50px;
         right: 50px;
+        @media (max-width:$desktop){
+             right: 20px; 
+        }
     }
     &__image {
         border-radius: 33px;
         overflow: hidden;
+        img{
+            width: 100%;
+        }
+        @media (max-width:$desktop){
+             border-radius: 20px; 
+        }
     }
     &__content{
         margin: 20px 8px 0;
+        @media (max-width:$desktop){
+             margin: 16px 4px 0; 
+        }
     }
     &__title {
         font-weight: 600;
@@ -33,5 +45,9 @@
         font-weight: 500;
         line-height: 1.42;
       }
+    }
+    @media (max-width:$desktop){
+         border-radius: 28px; 
+         padding: 16px 16px 24px;
     }
 }

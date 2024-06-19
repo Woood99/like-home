@@ -39,6 +39,13 @@
     &__subtitle{
         transition: color $transitionSpeed $transitionFunction;
     }
+    @media (max-width:$desktop){
+         position: relative;
+         z-index: 3; 
+         border-radius: 45px 45px 0 0;
+         margin-top: -75px;
+         padding-top: 65px;
+    }
 }
 
 .advantages-card-primary {
@@ -48,10 +55,22 @@
     gap: 60px;
     &__title{
         color: var(--gray);
+        @media (max-width:$desktop){
+            text-align: center; 
+       }
     }
     img{
         border-radius: 70px;
         min-width: 422px;
+        @media (max-width:$desktop){
+             border-radius: 24px; 
+             min-width: auto;
+        }
+    }
+    @media (max-width:$desktop){
+         padding: 0;
+         flex-direction: column-reverse;
+        gap: 32px;
     }
 }
 
@@ -62,11 +81,23 @@
     padding: 0 85px;
     &__title{
         color: var(--gray);
+        @media (max-width:$desktop){
+             text-align: center; 
+        }
     }
     img{
         border-radius: 70px;
         min-width: 267px;
+        @media (max-width:$desktop){
+            border-radius: 24px; 
+            min-width: auto;
+       }
     }
+    @media (max-width:$desktop){
+        padding: 0;
+        flex-direction: column;
+        gap: 32px;
+   }
 }
 
 .advantages-card-third {
@@ -75,9 +106,20 @@
         color: var(--gray);
         text-align: center;
         margin-top: 60px;
+        @media (max-width:$desktop){
+            text-align: center; 
+            margin-top: 32px;
+       }
     }
     img{
         border-radius: 70px;
+        @media (max-width:$desktop){
+             border-radius: 24px; 
+             min-height: 165px;
+        }
+    }
+    @media (max-width:$desktop){
+         padding: 0; 
     }
 }
 
@@ -90,12 +132,23 @@
             position: absolute;
             top: 0;
             left: -100px;
+            @media (max-width:$desktop){
+                 width: 15%;
+                 left: 0;
+                 height: auto; 
+                 top: -35%;
+            }
         }
         img{
             margin-left: 90px;
             border-radius: 70px;
             position: relative;
             z-index: 3;
+            @media (max-width:$desktop){
+                 margin: 0 auto;
+                 border-radius: 24px; 
+                 min-height: 165px;
+            }
         }
     }
     &__title{
@@ -103,5 +156,8 @@ margin: 60px auto 0;
         color: var(--gray);
         text-align: center;
         max-width: 961px;
+        @media (max-width:$desktop){
+             margin-top: 32px; 
+        }
     }
 }

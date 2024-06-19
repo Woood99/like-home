@@ -1,5 +1,5 @@
 .hero {
-
+    margin-top: 80px;
     &__wrapper {
         position: relative;
     }
@@ -10,11 +10,29 @@
         &--1 {
             left: 0;
             top: 31px;
+            @media (max-width:$desktop){
+                 max-width: 200px; 
+                 top: auto;
+                 bottom: -30px; 
+                 left: 4%;
+            }
+            @media (max-width:$smallTablet-max){
+         display: none;
+            }
         }
 
         &--2 {
             top: 0;
             right: 0;
+            @media (max-width:$desktop){
+                max-width: 200px;
+                top: auto;
+                bottom: -30px; 
+                right: 4%;
+            }
+            @media (max-width:$smallTablet-max){
+              display: none;
+            }
         }
     }
 
@@ -38,7 +56,7 @@
 
         p {
             font-weight: 500;
-            font-size: 18px;
+            font-size: var(--second-font);
             line-height: 1.5;
         }
     }
@@ -46,6 +64,17 @@
     &__btn {
         margin-top: 70px;
         padding: 0 97px;
+        @media (max-width:$desktop){
+             margin-top: 48px; 
+        }
+        @media (max-width:$mobile-max){
+            width: 100%;
+            padding: 0 24px; 
+       }
+    }
+    
+    @media (max-width:$smallTablet-max){
+         margin-top: 45px; 
     }
 }
 

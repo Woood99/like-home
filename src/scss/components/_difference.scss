@@ -7,6 +7,7 @@
 
     &__wrapper {
         transform: translateY(-60px);
+        
     }
 
     &__cards {
@@ -14,6 +15,12 @@
         grid-template-columns: repeat(3, 1fr);
         grid-column-gap: 24px;
         grid-row-gap: 32px;
+        @media (max-width:$desktop){
+             grid-template-columns: repeat(2,1fr); 
+        }
+      @media (max-width:$mobile-max){
+         grid-template-columns: 100%; 
+      }
     }
 
     &__card {
@@ -23,18 +30,17 @@
             &:hover {
                 transform: scale(1.05);
             }
-        }
-
-        &:nth-child(1),
-        &:nth-child(3) {
-            transform: translateY(-44px);
-
-            @media (min-width:$desktop-min) {
-                &:hover {
-                    transform: scale(1.05) translateY(-44px);
-                }
+            &:nth-child(1),
+            &:nth-child(3) {
+                transform: translateY(-44px);
+    
+                    &:hover {
+                        transform: scale(1.05) translateY(-44px);
+                    }
             }
         }
+
+
     }
 
     &__title {
@@ -45,5 +51,9 @@
         span {
             opacity: 0.5;
         }
+    }
+    @media (max-width:$desktop){
+         border-radius: 45px 45px 0 0; 
+         padding-bottom: calc(65px + 100px - 60px);
     }
 }

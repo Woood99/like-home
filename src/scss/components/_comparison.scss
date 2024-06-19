@@ -10,6 +10,14 @@
         top: 35px;
         right: 0;
         transform: translateY(-50%);
+        @media (max-width:$desktop){
+            width: 180px;
+        }
+        @media (max-width:$smallTablet-max){
+             width: 100px; 
+             top: 0px;
+             right: -20px;
+        }
     }
     &__title {
         text-align: center;
@@ -34,6 +42,9 @@
         align-items: center;
         justify-content: end;
         gap: 8px;
+     @media (max-width:$smallTablet-max){
+        justify-content: start;  
+     }
     }
 
     &__btn{
@@ -55,6 +66,19 @@
         &._active{
             background-color: var(--orange);
             color: var(--white);
+        }
+        @media (max-width:$desktop){
+             width: 245px;
+             height: 60px; 
+             padding: 0 16px;
+             font-size: var(--second-font);
+             border-radius: 24px;
+        }
+        @media (max-width:$smallTablet-max){
+            width: 50%;
+        }
+        @media (max-width:$mobile-max){
+             font-size: 14px; 
         }
     }
 
@@ -80,10 +104,34 @@
             color: #000;
             &:nth-child(1){
                 color: #867d76;
+             @media (max-width:$smallTablet-max){
+                grid-column: 1/-1;  
+                text-align: left;
+             }
+            }
+            @media (max-width:$smallTablet-max){
+                  text-align: center;
             }
         }
         &:not(:last-child){
             margin-bottom: 8px;
         }
+        @media (max-width:$desktop){
+             padding: 0 20px 0 40px; 
+             grid-template-columns: 1fr 250px 100px;
+             border-radius: 24px;
+        }
+        @media (max-width:$smallTablet-max){
+             grid-template-columns: 1fr 1fr;
+             grid-row-gap: 20px;
+             height: auto;
+             padding: 16px 20px 16px 40px;
+        }
+    }
+    @media (max-width:$desktop){
+         margin-top: 85px; 
+         padding-top: 65px;
+         border-radius: 45px 45px 0 0;
+         padding-bottom: calc(85px + 100px);
     }
 }

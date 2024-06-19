@@ -4,10 +4,19 @@
     color: var(--white);
     padding: 60px 0 28px;
     &__wrapper {
-        display: flex;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: repeat(4,max-content);
         justify-content: space-between;
-        gap: 20px;
+        grid-gap: 40px;
+        @media (max-width:$desktop){
+             grid-template-columns: repeat(3,max-content); 
+        }
+        @media (max-width:$smallTablet-max){
+             grid-template-columns: repeat(2,max-content); 
+        }
+        @media (max-width:$mobile-max){
+             grid-template-columns: 100%; 
+        }
     }
 
     &__col {
@@ -45,5 +54,9 @@
         border-top: 1px solid #545454;
        display: flex;
        justify-content: end;
+    }
+    @media (max-width:$desktop){
+         border-radius: 32px 32px 0 0; 
+         padding: 50px 0 24px;
     }
 }

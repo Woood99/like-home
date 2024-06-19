@@ -27,4 +27,8 @@
 
     &__btn {
     }
+    @media (max-width:$desktop){
+         padding-top: 65px; 
+         border-radius: 45px 45px 0 0;
+    }
 }

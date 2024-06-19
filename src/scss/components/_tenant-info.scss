@@ -1,5 +1,5 @@
 .tenant-info {
-
+    margin-top: 170px;
     &__wrapper {
         display: flex;
         flex-direction: column;
@@ -15,5 +15,14 @@
     }
     &__image{
         margin-top: 40px;
+        @media (max-width:$desktop){
+             max-width: 75%; 
+        }
+        @media (max-width:$mobile-max){
+             max-width: 92%; 
+        }
+    }
+    @media (max-width:$desktop){
+         margin-top: 75px; 
     }
 }

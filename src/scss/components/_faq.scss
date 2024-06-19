@@ -4,6 +4,9 @@
         background: #004EC4;
         background: linear-gradient(229deg, rgb(255, 255, 255) -155%, rgb(8, 71, 233) 100%);
         border-radius: 84px;
+        @media (max-width:$desktop){
+             border-radius: 45px; 
+        }
     }
 
     &__content {
@@ -13,6 +16,9 @@
         padding: 64px 24px 90px;
         position: relative;
         z-index: 1;
+        @media (max-width:$desktop){
+             padding: 65px 24px; 
+        }
     }
 
     &__title {
@@ -44,12 +50,14 @@
     
         &__title {
             color: var(--white);
+            text-align: left;
             font-weight: 600;
             font-size: 20px;
 
             display: flex;
             align-items: center;
             justify-content: space-between;
+            gap: 16px;
             width: 100%;
             padding-bottom: 13px;
             svg{
@@ -77,6 +85,9 @@
                 }
             }
         }
+    }
+    @media (max-width:$desktop){
+         margin-top: 65px; 
     }
 }
 

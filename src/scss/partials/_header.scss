@@ -1,15 +1,21 @@
 .header {
     height: 96px;
     border-bottom: 1px solid #e7e7e7;
-
+    position: relative;
     &__wrapper {
         display: flex;
         align-items: center;
         height: 100%;
+        @media (max-width:$desktop){
+             justify-content: space-between; 
+        }
     }
 
     &__logo {
         min-width: 125px;
+        @media (max-width:$desktop){
+            max-width: 150px;
+        }
     }
 
     &__nav {
@@ -18,12 +24,25 @@
 
     &__btn {
         margin-left: auto;
+        @media (max-width:$desktop){
+           margin: auto 0 0 0;
+           width: 65%;
+        }
+        @media (max-width:$smallTablet-max){
+             width: 100%;
+        }
     }
 
     &__menu {
         @media (min-width:$desktop-min) {
             display: none;
         }
+        @media (max-width:$desktop){
+             order: 2; 
+        }
+    }
+    @media (max-width:$desktop){
+         height: 65px; 
     }
 }
 
@@ -34,6 +53,11 @@
         align-items: center;
         flex-wrap: wrap;
         gap: 28px;
+        @media (max-width:$desktop){
+             flex-direction: column;
+             width: 100%;
+             align-items: start; 
+        }
     }
 
     &__item {}
@@ -50,34 +74,72 @@
                 color: var(--orange);
             }
         }
+        @media (max-width:$desktop){
+             font-size: var(--second-font); 
+        }
     }
 
     @media (max-width:$desktop){
-         display: none; 
+        visibility: hidden;
+        transform: translateX(100%);
+        transition: all $transitionSpeed $transitionFunction;
+
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        flex-direction: column;
+
+       padding: 24px 20px;
+
+        position: absolute;
+        top: 100%;
+       left: 0;
+        z-index: 4;
+        width: 100%;
+        height: 100%;
+        min-height: calc(var(--vh,100vh) - var(--header-height,65px) + 1px);
+        margin: 0;
+        background-color: var(--white);
+        overflow-y: auto;
+        border-top: 1px solid transparent
     }
 
     &._menu-open{
-        display: block;
+        visibility: visible;
+            transform: translateX(0);
+            border-top: 1px solid #EBEBEB;
     }
 }
 
 
 .burger-menu {
-    cursor: pointer;
-    margin: 0 auto;
-    padding-left: 10px;
+    --burger-width: 26px;
+    --burger-height: 18px;
+    --burger-line-height: 2px;
     position: relative;
-    width: 40px;
-    height: 40px;
-    flex: 0 0 50px;
+    z-index: 12;
+    border: none;
+    padding: 0;
+    width: var(--burger-width);
+    flex: 0 0 var(--burger-width);
+    height: var(--burger-height);
+    color: var(--black);
+    background-color: transparent;
+    cursor: pointer;
+    transform: rotate(0);
+
 
     &__span {
-        backface-visibility: hidden;
+        display: block;
         position: absolute;
-        left: 0;
-        border-top: 5px solid var(--black);
         width: 100%;
-        transition: 0.55s;
+        height: var(--burger-line-height);
+        background-color: currentColor;
+        border-radius: 9px;
+        opacity: 1;
+        left: 0;
+        transform: rotate(0);
+        transition: 435ms ease-in-out;
     }
 
     &__top {
@@ -85,30 +147,30 @@
     }
 
     &__middle {
-        top: 18px;
+        top: 50%;
+            transform: translateY(-50%);
     }
 
     &__bottom {
-        top: 36px;
+        transform: translateY(-100%);
+            top: 100%;
     }
 
     &._menu-open {
         .burger-menu__top {
-            backface-visibility: hidden;
-            top: 15px;
-            transform: rotate(50deg);
-            transition: 0.55s 0.5s;
+            top: 9px;
+            transform: rotate(135deg) translateY(-50%);
         }
 
         .burger-menu__middle {
             opacity: 0;
+            left: 40px;
         }
 
         .burger-menu__bottom {
-            backface-visibility: hidden;
-            top: 15px;
-            transform: rotate(-410deg);
-            transition: 0.55s 0.5s;
+            top: 9px;
+            transform: rotate(-135deg) translateY(-50%);
+            left: 1px;
         }
     }
 }
