@@ -21,10 +21,44 @@
     &__text {
         margin-top: 24px;
         text-align: center;
+        p{
+            font-weight: 500;
+            font-size: var(--second-font);
+        }
+    }
+
+    &__btns{
+        margin-top: 56px;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        gap: 8px;
+    }
+
+    &__btn{
+        width: 320px;
+        height: 91px;
+        font-size: var(--third-font);
+        font-weight: 500;
+        line-height: 1;
+
+        background-color: var(--white);
+        color: var(--black);
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        border-radius: 32px;
+
+        &._orange{
+            background-color: var(--orange);
+            color: var(--white);
+        }
     }
 
     &__wrapper {
-        margin-top: 50px;
+       margin-top: 16px;
     }
 
     &__card {

@@ -28,8 +28,10 @@
 
     &__text {
         margin-top: 16px;
+      p{
         font-size: var(--second-font);
         font-weight: 500;
         line-height: 1.42;
+      }
     }
 }

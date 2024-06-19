@@ -1,666 +1,678 @@
 <!DOCTYPE html>
 <html lang="ru" class="page">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<meta name="theme-color" content="#111111" />
+		<title>Главная</title>
+		<!-- <link rel="preload" href="fonts/MullerRegular.woff2" as="font" type="font/woff2" crossorigin> -->
+		<link rel="stylesheet" href="css/vendor.css" />
+		<link rel="stylesheet" href="css/global.css" />
 
-<head>
-    <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<meta name="theme-color" content="#111111">
-<title>Главная</title>
-<!-- <link rel="preload" href="fonts/MullerRegular.woff2" as="font" type="font/woff2" crossorigin> -->
-<link rel="stylesheet" href="css/vendor.css">
-<link rel="stylesheet" href="css/global.css">
+		<link rel="stylesheet" href="css/main.css" />
 
-    <link rel="stylesheet" href="css/main.css">
- 
-<script defer src="js/global.js"></script>
+		<script defer src="js/global.js"></script>
 
-    <script defer src="js/main.js"></script>
- 
+		<script defer src="js/main.js"></script>
+	</head>
 
-</head>
+	<body class="page__body">
+		<div class="site-container">
+			<header class="header">
+				<div class="container header__wrapper">
+					<div class="header__logo">
+						<img loading="lazy" src="./img/logo.svg" width="173" height="42" alt="Как дома" />
+					</div>
+					<div class="header__menu burger-menu" data-menu-path>
+						<span class="burger-menu__span burger-menu__top"></span>
+						<span class="burger-menu__span burger-menu__middle"></span>
+						<span class="burger-menu__span burger-menu__bottom"></span>
+					</div>
+					<nav class="header__nav header-nav" data-menu-target>
+						<ul class="header-nav__list list-reset">
+							<li class="header-nav__item">
+								<a href="#" class="header-nav__link">
+									Сдать квартиру
+								</a>
+							</li>
+							<li class="header-nav__item">
+								<a href="#" class="header-nav__link">
+									Снять квартиру
+								</a>
+							</li>
+							<li class="header-nav__item">
+								<a href="#" class="header-nav__link">
+									О страховке
+								</a>
+							</li>
+							<li class="header-nav__item">
+								<a href="#" class="header-nav__link">
+									Дизайн-решения
+								</a>
+							</li>
+							<li class="header-nav__item">
+								<a href="#" class="header-nav__link">
+									Застройщикам
+								</a>
+							</li>
+							<li class="header-nav__item">
+								<a href="#" class="header-nav__link">
+									Контакты
+								</a>
+							</li>
+						</ul>
+					</nav>
+					<button class="header__btn btn btn-reset btn-small" disabled>
+						<span class="btn-small__text">
+							Личный кабинет
+						</span>
+					</button>
+				</div>
+			</header>
+			<main class="main">
+				<section class="hero mt-20">
+					<div class="container hero__wrapper">
+						<img src="./img/hero-image.png" class="hero__image hero__image--1" width="351" height="356" alt="" />
+						<div class="hero__info">
+							<h1 class="hero__title title-1">
+								Владельцы квартир
+								<span>зарабатывают</span> с нами
+							</h1>
+							<div class="hero__text">
+								<p>
+									Сервис аренды квартир «Как Дома» помогает обустроить, подготовить и сдать вашу квартиру в аренду как на краткосрочный, так и на долгосрочный период
+								</p>
+							</div>
+							<button class="hero__btn btn btn-reset btn-primary">
+								<span class="btn-primary__text">
+									Оставить заявку
+								</span>
+							</button>
+						</div>
+						<img src="./img/hero-image2.png" class="hero__image hero__image--2" width="310" height="399" alt="" />
+					</div>
+				</section>
+				<section class="tenant-info mt-[170px]">
+					<div class="container tenant-info__wrapper">
+						<h2 class="tenant-info__title title-2">Делаем жизнь арендодателя проще: <span>забираем все хлопоты себе</span></h2>
+						<img src="./img/tenant-info.png" class="tenant-info__image" width="1080" height="746" alt="" />
+					</div>
+				</section>
+				<section class="difference">
+					<div class="container">
+						<div class="difference__wrapper">
+							<div class="difference__cards">
+								<article class="difference__card card-primary">
+									<div class="card-primary__image">
+										<picture>
+											<source srcset="./img/card-image-1.webp" type="image/webp" />
+											<img loading="lazy" src="./img/card-image-1.jpg" width="376" height="214" alt="Круглосуточный сервис" />
+										</picture>
+									</div>
+									<div class="card-primary__content">
+										<h3 class="card-primary__title"><span>Круглосуточный</span> сервис</h3>
+										<div class="card-primary__text">
+											<p>
+												Мы всегда рядом, по любым вопросам. Техническое обслуживание тоже за нами
+											</p>
+										</div>
+									</div>
+								</article>
+								<article class="difference__card card-primary">
+									<img src="./img/card.png" class="card-primary__badge" width="142" height="95" alt="" />
+									<div class="card-primary__image">
+										<picture>
+											<source srcset="./img/card-image-2.webp" type="image/webp" />
+											<img loading="lazy" src="./img/card-image-2.jpg" width="376" height="214" alt="Личный кабинет инвестора" />
+										</picture>
+									</div>
+									<div class="card-primary__content">
+										<h3 class="card-primary__title"><span>Личный кабинет</span> инвестора</h3>
+										<div class="card-primary__text">
+											<p>
+												Тарифы, прибыль за текущий месяц, прогноз по прибыли на год, загруженность ваших апартаментов, информация о проживающих
+											</p>
+										</div>
+									</div>
+								</article>
+								<article class="difference__card card-primary">
+									<div class="card-primary__image">
+										<picture>
+											<source srcset="./img/card-image-3.webp" type="image/webp" />
+											<img loading="lazy" src="./img/card-image-3.jpg" width="376" height="214" alt="Бесконтактный доступ в апартаменты 24/7" />
+										</picture>
+									</div>
+									<div class="card-primary__content">
+										<h3 class="card-primary__title"><span>Бесконтактный</span> доступ в апартаменты 24/7</h3>
+										<div class="card-primary__text">
+											<p>
+												Никакого ожидания при заселении
+											</p>
+										</div>
+									</div>
+								</article>
+							</div>
+							<h2 class="difference__title title-2">— то, что отличает нас <span>от других</span></h2>
+						</div>
+					</div>
+				</section>
+				<section class="how-works">
+					<div class="container">
+						<h2 class="how-works__title title-2">Как это <span>работает</span></h2>
+						<div class="how-works__steps">
+							<img loading="lazy" src="./img/how-works-line.svg" class="how-works__line" alt="" />
+							<div class="how-works__step">
+								<span class="how-works__badge">
+									Шаг 1
+								</span>
+								<div class="how-works__text max-w-[291px]">
+									<p>
+										Оставляете заявку на нашем сайте — связываемся с вами и обсуждаем детали
+									</p>
+								</div>
+							</div>
+							<div class="how-works__step">
+								<span class="how-works__badge">
+									Шаг 2
+								</span>
+								<div class="how-works__text">
+									<p>
+										Проводим оценку квартиры на месте: рекомендуем, как дёшево и быстро улучшить внешний вид
+									</p>
+								</div>
+							</div>
+							<div class="how-works__step">
+								<span class="how-works__badge">
+									Шаг 3
+								</span>
+								<div class="how-works__text">
+									<p>
+										Обсуждаем наиболее выгодные для вас условия и подписываем договор
+									</p>
+								</div>
+							</div>
+							<div class="how-works__step">
+								<span class="how-works__badge">
+									Всё это время вы...
+								</span>
+								<div class="how-works__text">
+									<p>
+										Наслаждаетесь отсутствием забот и занимаетесь любимыми делами!
+									</p>
+								</div>
+							</div>
+							<div class="how-works__step">
+								<span class="how-works__badge">
+									Шаг 5
+								</span>
+								<div class="how-works__text">
+									<p>
+										Проверяем и подбираем арендатора по утверждённым параметрам
+									</p>
+								</div>
+							</div>
+							<div class="how-works__step">
+								<span class="how-works__badge">
+									Шаг 4
+								</span>
+								<div class="how-works__text">
+									<p>
+										Размещаем ваш лот на всех топовых площадка аренды и получим самые выгодные условия
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="tenant-banner" style='background-image: url("../img/bg.jpg");'>
+					<div class="container">
+						<div class="tenant-banner__wrapper">
+							<h2 class="tenant-banner__title title-2">
+								Нужны порядочные арендаторы?
+								<span>Доверьте</span> их поиск нам
+							</h2>
+							<button class="tenant-banner__btn btn btn-reset btn-primary">
+								<span class="btn-primary__text">
+									Оставить заявку
+								</span>
+							</button>
+						</div>
+					</div>
+				</section>
+				<section class="advantages">
+					<div class="container advantages__container">
+						<h2 class="advantages__title title-2">Преимущества <span>для застройщиков</span></h2>
+						<div class="advantages__text">
+							<p>
+								Возьмём на себя всё что необходимо покупателю новой квартиры для того, чтобы как можно скорее начать зарабатывать на ней
+							</p>
+						</div>
+						<div class="advantages__card advantages-card-four">
+							<div class="advantages-card-four__image">
+								<svg width="279" height="384" viewBox="0 0 279 384" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M148.696 2.18602C146.317 34.4191 152.998 92.0797 166.743 120.869C183.47 155.906 207.466 189.745 239.381 212.507C249.355 219.622 276.732 235.298 277.212 209.595C277.635 186.977 264.161 160.993 251.817 143.256C229.559 111.275 198.625 83.2846 165.521 62.8691C143.245 49.1309 108.236 30.7556 81.2627 44.0616C46.3922 61.2637 61.9304 114.803 70.0991 141.148C89.6797 204.3 122.084 268.328 162.513 320.739C180.022 343.437 209.589 375.587 240.223 381.619C264.887 386.476 257.105 355.515 252.886 345.091C233.97 298.349 197.454 254.329 161.252 220.226C128.292 189.177 48.8926 149.992 2.11076 145.885"
+										stroke="black"
+										stroke-width="3"
+										stroke-linecap="round"
+									/>
+								</svg>
+								<img src="./img/advantages-image.png" width="1017" height="330" alt="" />
+							</div>
+							<h3 class="advantages-card-four__title advantages__subtitle title-3">
+								Наш ИИ проанализирует рынок и покажет потенциальные ROI проекта
+							</h3>
+						</div>
 
-<body class="page__body">
-    <div class="site-container">
-        <header class="header">
-    <div class="container header__wrapper">
-        <div class="header__logo">
-            <img loading="lazy" src="./img/logo.svg" width='173' height='42' alt="Как дома">
-        </div>
-        <nav class="header__nav header-nav">
-            <ul class="header-nav__list list-reset">
-                <li class="header-nav__item">
-                    <a href="#" class="header-nav__link">
-                        Сдать квартиру
-                    </a>
-                </li>
-                <li class="header-nav__item">
-                    <a href="#" class="header-nav__link">
-                        Снять квартиру
-                    </a>
-                </li>
-                <li class="header-nav__item">
-                    <a href="#" class="header-nav__link">
-                        О страховке
-                    </a>
-                </li>
-                <li class="header-nav__item">
-                    <a href="#" class="header-nav__link">
-                        Дизайн-решения
-                    </a>
-                </li>
-                <li class="header-nav__item">
-                    <a href="#" class="header-nav__link">
-                        Застройщикам
-                    </a>
-                </li>
-                <li class="header-nav__item">
-                    <a href="#" class="header-nav__link">
-                        Контакты
-                    </a>
-                </li>
-            </ul>
-        </nav>
-        <button class="header__btn btn btn-reset btn-small" disabled>
-            <span class="btn-small__text">
-                Личный кабинет
-            </span>
-        </button>
-    </div>
-</header>
-        <main class="main">
-            <section class='hero mt-20'>
-    <div class="container hero__wrapper">
-        <img src="./img/hero-image.png" class='hero__image hero__image--1' width='351' height='356' alt="">
-        <div class="hero__info">
-            <h1 class='hero__title title-1'>
-                Владельцы квартир
-                <span>зарабатывают</span> с нами
-            </h1>
-            <div class="hero__text">
-                <p>
-                    Сервис аренды квартир «Как Дома» помогает обустроить, подготовить и сдать вашу квартиру в аренду как на краткосрочный, так и на долгосрочный период
-                </p>
-            </div>
-            <button class='hero__btn btn btn-reset btn-primary'>
-                <span class='btn-primary__text'>
-                    Оставить заявку
-                </span>
-            </button>
-        </div>
-        <img src="./img/hero-image2.png" class='hero__image hero__image--2' width='310' height='399' alt="">
-    </div>
-</section>
-            <section class='tenant-info mt-[170px]'>
-    <div class="container tenant-info__wrapper">
-        <h2 class='tenant-info__title title-2'>
-            Делаем жизнь арендодателя проще: <span>забираем все хлопоты себе</span>
-        </h2>
-       <img src="./img/tenant-info.png" class='tenant-info__image' width='1080' height='746' alt="">
-    </div>
-</section>
-            <section class='difference'>
-    <div class="container">
-        <div class="difference__wrapper">
-            <div class="difference__cards">
-                <article class='difference__card card-primary'>
-                    <div class="card-primary__image">
-                        <picture>
-                            <source srcset="./img/card-image-1.webp" type="image/webp">
-                            <img loading="lazy" src="./img/card-image-1.jpg" width="376" height="214" alt="Круглосуточный сервис">
-                        </picture>
-                    </div>
-                    <div class="card-primary__content">
-                        <h3 class="card-primary__title">
-                            <span>Круглосуточный</span> сервис
-                        </h3>
-                        <div class="card-primary__text">
-                            <p>
-                                Мы всегда рядом, по любым вопросам. Техническое обслуживание тоже за нами
-                            </p>
-                        </div>
-                    </div>
-                </article>
-                <article class='difference__card card-primary'>
-                    <img src="./img/card.png" class='card-primary__badge' width='142' height='95' alt="">
-                    <div class="card-primary__image">
-                        <picture>
-                            <source srcset="./img/card-image-2.webp" type="image/webp">
-                            <img loading="lazy" src="./img/card-image-2.jpg" width="376" height="214" alt="Личный кабинет инвестора">
-                        </picture>
-                    </div>
-                    <div class="card-primary__content">
-                        <h3 class="card-primary__title">
-                            <span>Личный кабинет</span> инвестора
-                        </h3>
-                        <div class="card-primary__text">
-                            <p>
-                                Тарифы, прибыль за текущий месяц, прогноз по прибыли на год, загруженность ваших апартаментов, информация о проживающих
-                            </p>
-                        </div>
-                    </div>
-                </article>
-                <article class='difference__card card-primary'>
-                    <div class="card-primary__image">
-                        <picture>
-                            <source srcset="./img/card-image-3.webp" type="image/webp">
-                            <img loading="lazy" src="./img/card-image-3.jpg" width="376" height="214" alt="Бесконтактный доступ в апартаменты 24/7">
-                        </picture>
-                    </div>
-                    <div class="card-primary__content">
-                        <h3 class="card-primary__title">
-                            <span>Бесконтактный</span> доступ в апартаменты 24/7
-                        </h3>
-                        <div class="card-primary__text">
-                            <p>
-                                Никакого ожидания при заселении
-                            </p>
-                        </div>
-                    </div>
-                </article>
-            </div>
-            <h2 class="difference__title title-2">
-                — то, что отличает нас <span>от других</span>
-            </h2>
-        </div>
-    </div>
-</section>
-            <section class='how-works'>
-    <div class="container">
-        <h2 class='how-works__title title-2'>
-            Как это <span>работает</span>
-        </h2>
-        <div class="how-works__steps">
-            <img loading="lazy" src="./img/how-works-line.svg" class="how-works__line" alt="">
-            <div class="how-works__step">
-                <span class="how-works__badge">
-                    Шаг 1
-                </span>
-                <div class="how-works__text max-w-[291px]">
-                    <p>
-                        Оставляете заявку на нашем сайте — связываемся с вами и обсуждаем детали
-                    </p>
-                </div>
-            </div>
-            <div class="how-works__step">
-                <span class="how-works__badge">
-                    Шаг 2
-                </span>
-                <div class="how-works__text">
-                    <p>
-                        Проводим оценку квартиры на месте: рекомендуем, как дёшево и быстро улучшить внешний вид
-                    </p>
-                </div>
-            </div>
-            <div class="how-works__step">
-                <span class="how-works__badge">
-                    Шаг 3
-                </span>
-                <div class="how-works__text">
-                    <p>
-                        Обсуждаем наиболее выгодные для вас условия и подписываем договор
-                    </p>
-                </div>
-            </div>
-            <div class="how-works__step">
-                <span class="how-works__badge">
-                    Всё это время вы...
-                </span>
-                <div class="how-works__text">
-                    <p>
-                        Наслаждаетесь отсутствием
-                        забот и занимаетесь любимыми делами!
-                    </p>
-                </div>
-            </div>
-            <div class="how-works__step">
-                <span class="how-works__badge">
-                    Шаг 5
-                </span>
-                <div class="how-works__text">
-                    <p>
-                        Проверяем и подбираем арендатора по утверждённым параметрам
-                    </p>
-                </div>
-            </div>
-            <div class="how-works__step">
-                <span class="how-works__badge">
-                    Шаг 4
-                </span>
-                <div class="how-works__text">
-                    <p>
-                        Размещаем ваш лот на всех топовых площадка аренды и получим самые выгодные условия
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-            <section class='tenant-banner' style='background-image: url("../img/bg.jpg");'>
-    <div class="container">
-        <div class="tenant-banner__wrapper">
-            <h2 class='tenant-banner__title title-2'>
-                Нужны порядочные
-                арендаторы?
-                <span>Доверьте</span> их поиск нам
-            </h2>
-            <button class="tenant-banner__btn btn btn-reset btn-primary">
-                <span class="btn-primary__text">
-                    Оставить заявку
-                </span>
-            </button>
-        </div>
-    </div>
-</section>
-            <section class='advantages'>
-    <div class="container advantages__container">
-        <h2 class='advantages__title title-2'>
-            Преимущества <span>для застройщиков</span>
-        </h2>
-        <div class="advantages__text">
-            <p>
-                Возьмём на себя всё что необходимо покупателю новой квартиры для того, чтобы как можно скорее начать зарабатывать на ней
-            </p>
-        </div>
-        <div class="advantages__card advantages-card-four">
-            <div class='advantages-card-four__image'>
-                <svg width="279" height="384" viewBox="0 0 279 384" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M148.696 2.18602C146.317 34.4191 152.998 92.0797 166.743 120.869C183.47 155.906 207.466 189.745 239.381 212.507C249.355 219.622 276.732 235.298 277.212 209.595C277.635 186.977 264.161 160.993 251.817 143.256C229.559 111.275 198.625 83.2846 165.521 62.8691C143.245 49.1309 108.236 30.7556 81.2627 44.0616C46.3922 61.2637 61.9304 114.803 70.0991 141.148C89.6797 204.3 122.084 268.328 162.513 320.739C180.022 343.437 209.589 375.587 240.223 381.619C264.887 386.476 257.105 355.515 252.886 345.091C233.97 298.349 197.454 254.329 161.252 220.226C128.292 189.177 48.8926 149.992 2.11076 145.885" stroke="black" stroke-width="3" stroke-linecap="round" />
-                </svg>
-                <img src="./img/advantages-image.png" width='1017' height='330' alt="">
-            </div>
-            <h3 class="advantages-card-four__title advantages__subtitle title-3">
-                Наш ИИ проанализирует рынок и покажет потенциальные ROI проекта
-            </h3>
-        </div>
+						<div class="advantages__card advantages-card-primary">
+							<h3 class="advantages-card-primary__title advantages__subtitle title-3">Наши дизайнеры подготовят 3 дизайн-проекта на выбор</h3>
+							<picture>
+								<source srcset="./img/advantages-image-2.webp" type="image/webp" />
+								<img loading="lazy" src="./img/advantages-image-2.jpg" width="422" height="330" alt="" />
+							</picture>
+						</div>
+						<div class="advantages__card advantages-card-second">
+							<picture>
+								<source srcset="./img/advantages-image-3.webp" type="image/webp" />
+								<img loading="lazy" src="./img/advantages-image-3.jpg" width="267" height="330" alt="" />
+							</picture>
+							<h3 class="advantages-card-second__title advantages__subtitle title-3">
+								Наши подрядчики сделают качественный ремонт по выбранному дизайн-проекту строго исходя из желаемого бюджета
+							</h3>
+						</div>
+						<div class="advantages__card advantages-card-third">
+							<picture>
+								<source srcset="./img/advantages-image-4.webp" type="image/webp" />
+								<img loading="lazy" src="./img/advantages-image-4.jpg" width="1017" height="330" alt="" />
+							</picture>
+							<h3 class="advantages-card-third__title advantages__subtitle title-3">
+								Наши специалисты подключат квартиру к системе «Как Дома» и сразу возьмут под контроль все необходимые для сдачи в аренду процессы
+							</h3>
+						</div>
+					</div>
+				</section>
+				<section class="comparison">
+					<svg class="comparison__svg" width="284" height="280" viewBox="0 0 284 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M108.078 1.44224C117.813 27.1385 122.471 70.744 112.659 90.2686C100.716 114.029 80.0389 135.286 47.7359 146.179C37.6397 149.583 9.09903 155.92 2.98876 135.735C-2.388 117.973 7.7155 100.582 18.2812 89.3902C37.3318 69.2103 67.3635 54.0213 101.56 45.2189C124.572 39.2956 161.431 32.4985 195.759 48.7179C240.139 69.6863 233.578 108.159 229.74 126.978C220.541 172.089 196.576 215.115 160.745 247.332C145.228 261.285 117.689 280.019 83.2674 278.117C55.5532 276.586 57.9432 254.078 60.6122 246.845C72.5798 214.411 105.66 187.905 140.514 169.078C172.247 151.937 256.38 138.467 310.049 145.359"
+							stroke="black"
+							stroke-width="2.74131"
+							stroke-linecap="round"
+						/>
+					</svg>
+					<div class="container-second">
+						<h2 class="comparison__title title-2">Сравните <span>сами</span></h2>
+						<div class="comparison__text">
+							<p>
+								Ни один агент не предоставит такой сервис и поддержку, как мы
+							</p>
+						</div>
+						<div class="comparison__btns">
+							<div class="comparison__btn">
+								Агент
+							</div>
+							<div class="comparison__btn _orange">
+								Сервис «Как дома»
+							</div>
+						</div>
+						<div class="comparison__wrapper">
+							<div class="comparison__card">
+								<span>Бесконтактное заселение</span>
+								<span>нет</span>
+								<span>да</span>
+							</div>
+							<div class="comparison__card">
+								<span>Круглосуточный контакт-центр</span>
+								<span>нет</span>
+								<span>да</span>
+							</div>
+							<div class="comparison__card">
+								<span>Страхование квартиры</span>
+								<span>нет</span>
+								<span>да</span>
+							</div>
+							<div class="comparison__card">
+								<span>Проверка арендатора</span>
+								<span>нет</span>
+								<span>да</span>
+							</div>
+							<div class="comparison__card">
+								<span>Подготовка квартиры к сдаче</span>
+								<span>нет</span>
+								<span>да</span>
+							</div>
+							<div class="comparison__card">
+								<span>Отельный сервис</span>
+								<span>нет</span>
+								<span>да</span>
+							</div>
+							<div class="comparison__card">
+								<span>Личный кабинет инвестора</span>
+								<span>нет</span>
+								<span>да</span>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="applic-form">
+					<div class="container-second">
+						<h2 class="applic-form__title title-2">
+							Остались вопросы?
+						</h2>
+						<div class="applic-form__text">
+							<p>
+								Оставьте заявку — свяжемся с вами, уточним детали и предложим выгодные варианты сотрудничества
+							</p>
+						</div>
+						<form action="#" class="applic-form__form form-primary">
+							<label class="form-primary__label label-primary">
+								<input type="text" name="Имя" class="input-reset input-primary label-primary__input" placeholder="Ваше имя" />
+							</label>
+							<label class="form-primary__label label-primary">
+								<input type="email" name="email" class="input-reset input-primary label-primary__input" placeholder="E-mail (необязательно)" />
+							</label>
+							<label class="form-primary__label label-primary">
+								<input type="tel" name="phone" class="input-reset input-primary label-primary__input" placeholder="Телефон" />
+							</label>
+							<div class="form-primary__agree checkbox">
+								<input id="c_1" class="checkbox__input" type="checkbox" value="1" />
+								<label for="c_1" class="checkbox__label">
+									<span class="checkbox__text"> Соглашаюсь на&nbsp;<a href="#">обработку персональных данных</a> </span>
+								</label>
+							</div>
+							<button type="submit" class="applic-form__btn btn btn-reset btn-primary form-primary__btn">
+								Оставить заявку
+							</button>
+						</form>
+					</div>
+				</section>
+				<section class="faq">
+					<div class="container-second">
+						<div class="faq__wrapper">
+							<div class="faq__content">
+								<h2 class="faq__title">
+									FAQ
+								</h2>
+								<div data-spollers data-spollers-mode="one" class="spollers">
+									<div class="spollers__item" data-spollers-item>
+										<button type="button" data-spollers-btn class="btn btn-reset spollers__title">
+											<span>Сколько это стоит?</span>
+											<svg width="13" height="6" viewBox="0 0 13 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M12 0.5L6.5 5.5L1 0.5" stroke="#FAFAFA" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+											</svg>
+										</button>
+										<div class="spollers__body" data-spollers-body hidden>
+											<p>
+												Для вас, как собственника, сервис абсолютно бесплатен. Арендатор&nbsp;же оплачивает сумму, указанную в&nbsp;объявлении, которая уже включает в&nbsp;себя
+												комиссию. Например, вы&nbsp;хотите сдавать свою однокомнатную квартиру за&nbsp;30&nbsp;000&nbsp;рублей. В&nbsp;этом случае арендатор платит
+												33&nbsp;000&nbsp;рублей, включающих&nbsp;5% комиссии (это фиксированный процент, указанный в&nbsp;договоре) и&nbsp;оплату финансовой защиты. Вы&nbsp;получаете
+												свои 30&nbsp;000&nbsp;рублей, а&nbsp;оставшиеся 3&nbsp;000 рублей идут сервису
+											</p>
+											<p>
+												При посуточном управлении вашей недвижимости сервис &laquo;Как Дома&raquo; взимает комиссию 10&ndash;15% от&nbsp;цены брони
+											</p>
+										</div>
+									</div>
+									<div class="spollers__item" data-spollers-item>
+										<button type="button" data-spollers-btn class="btn btn-reset spollers__title">
+											<span>Какие квартиры подходят для сервиса?</span>
+											<svg width="13" height="6" viewBox="0 0 13 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M12 0.5L6.5 5.5L1 0.5" stroke="#FAFAFA" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+											</svg>
+										</button>
+										<div class="spollers__body" data-spollers-body hidden>
+											<p>
+												Практически любая квартира может быть сдана через наш сервис. Главное условие: в&nbsp;ней не&nbsp;должно быть ваших личных вещей. Помните, что арендаторы
+												хотят чувствовать себя как дома, а&nbsp;ваши вещи будут напоминать&nbsp;им, что квартира съёмная. Также в&nbsp;квартире должен быть минимальный набор мебели
+												и&nbsp;техники, кухонный гарнитур. Желательно наличие стабильного интернета. Мы&nbsp;подскажем, что стоит убрать или добавить, чтобы выделить вашу квартиру
+												среди других и&nbsp;показать все её&nbsp;преимущества.
+											</p>
+										</div>
+									</div>
+									<div class="spollers__item" data-spollers-item>
+										<button type="button" data-spollers-btn class="btn btn-reset spollers__title">
+											<span>Кто платит налоги за&nbsp;сдачу квартиры в&nbsp;аренду?</span>
+											<svg width="13" height="6" viewBox="0 0 13 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M12 0.5L6.5 5.5L1 0.5" stroke="#FAFAFA" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+											</svg>
+										</button>
+										<div class="spollers__body" data-spollers-body hidden>
+											<p>
+												Сервис не&nbsp;занимается подачей налоговой отчётности и&nbsp;оплатой налогов. Это ваша ответственность как собственника жилья.
+											</p>
+										</div>
+									</div>
+									<div class="spollers__item" data-spollers-item>
+										<button type="button" data-spollers-btn class="btn btn-reset spollers__title">
+											<span>Зачем нужна финансовая защита?</span>
+											<svg width="13" height="6" viewBox="0 0 13 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M12 0.5L6.5 5.5L1 0.5" stroke="#FAFAFA" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+											</svg>
+										</button>
+										<div class="spollers__body" data-spollers-body hidden>
+											<p>
+												Она послужит вам &laquo;подушкой безопасности&raquo; в&nbsp;случае непредвиденных ситуаций с&nbsp;квартирой. Например, если арендаторы внезапно съедут,
+												сломают мебель или зальют соседей, мы&nbsp;компенсируем вам расходы на&nbsp;ремонт в&nbsp;пределах установленных лимитов.
+											</p>
+										</div>
+									</div>
+									<div class="spollers__item" data-spollers-item>
+										<button type="button" data-spollers-btn class="btn btn-reset spollers__title">
+											<span>Можно&nbsp;же сдать квартиру самостоятельно?</span>
+											<svg width="13" height="6" viewBox="0 0 13 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M12 0.5L6.5 5.5L1 0.5" stroke="#FAFAFA" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+											</svg>
+										</button>
+										<div class="spollers__body" data-spollers-body hidden>
+											<p>
+												Сдавать квартиру самостоятельно&nbsp;&mdash; это долго и&nbsp;хлопотно. С&nbsp;сервисом &laquo;Как дома&raquo; вы&nbsp;получите массу преимуществ:
+											</p>
+											<p>
+												&mdash;&nbsp;cдача квартиры произойдёт быстрее, так как арендаторы не&nbsp;платят комиссию риелтору и&nbsp;депозит
+												<br />
+												&mdash;&nbsp;вы&nbsp;сэкономите время, потому что мы&nbsp;самостоятельно подберём подходящих арендаторов. Вам останется только выбрать наиболее подходящего
+												кандидата <br />
+												&mdash;&nbsp;вы&nbsp;будете защищены от&nbsp;финансовых потерь, ведь мы&nbsp;выплатим компенсацию за&nbsp;любой ущерб, нанесённый арендаторами <br />
+												&mdash;&nbsp;мы&nbsp;решим все бытовые вопросы, не&nbsp;отвлекая вас от&nbsp;личных дел
+											</p>
+											<p>
+												И&nbsp;все это&nbsp;&mdash; абсолютно бесплатно для вас.
+											</p>
+										</div>
+									</div>
+									<div class="spollers__item" data-spollers-item>
+										<button type="button" data-spollers-btn class="btn btn-reset spollers__title">
+											<span>Можно&nbsp;ли не&nbsp;отдавать ключи от&nbsp;квартиры?</span>
+											<svg width="13" height="6" viewBox="0 0 13 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M12 0.5L6.5 5.5L1 0.5" stroke="#FAFAFA" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+											</svg>
+										</button>
+										<div class="spollers__body" data-spollers-body hidden>
+											<p>
+												Вы&nbsp;можете оставить ключи у&nbsp;себя. В&nbsp;этом случае мы&nbsp;будем согласовывать с&nbsp;вами каждый показ, что может занять больше времени. Вам,
+												скорее всего, придётся лично присутствовать на&nbsp;просмотрах. Помните, что мы&nbsp;покажем квартиру только потенциальным арендаторам и&nbsp;без вашего
+												согласия никто в&nbsp;неё не&nbsp;заселится.
+											</p>
+										</div>
+									</div>
+									<div class="spollers__item" data-spollers-item>
+										<button type="button" data-spollers-btn class="btn btn-reset spollers__title">
+											<span>Какие документы нужно будет подписать?</span>
+											<svg width="13" height="6" viewBox="0 0 13 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M12 0.5L6.5 5.5L1 0.5" stroke="#FAFAFA" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+											</svg>
+										</button>
+										<div class="spollers__body" data-spollers-body hidden>
+											<p>
+												Два документа даём на&nbsp;подпись: соглашение о&nbsp;сотрудничестве с&nbsp;сервисом (онлайн в&nbsp;личном кабинете) и&nbsp;договор аренды с&nbsp;выбранным
+												арендатором. Мы&nbsp;подготовим договор, вам останется только подписать его. Все документы доступны на&nbsp;сайте, можете ознакомиться с&nbsp;ними заранее.
+											</p>
+										</div>
+									</div>
+									<div class="spollers__item" data-spollers-item>
+										<button type="button" data-spollers-btn class="btn btn-reset spollers__title">
+											<span>Сколько занимает поиск арендаторов?</span>
+											<svg width="13" height="6" viewBox="0 0 13 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M12 0.5L6.5 5.5L1 0.5" stroke="#FAFAFA" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+											</svg>
+										</button>
+										<div class="spollers__body" data-spollers-body hidden>
+											<p>
+												Мы&nbsp;знаем, как быстро найти арендаторов. В&nbsp;среднем они заселяются в&nbsp;квартиру через 10&nbsp;дней после заключения договора. Но&nbsp;у&nbsp;нас
+												были случаи, когда арендаторы находились лишь через 2&nbsp;часа! Мы&nbsp;успешно продвигаем объявления и&nbsp;привлекаем арендаторов. Наш менеджер оценит вашу
+												квартиру и&nbsp;подскажет как ускорить поиск.
+											</p>
+										</div>
+									</div>
+									<div class="spollers__item" data-spollers-item>
+										<button type="button" data-spollers-btn class="btn btn-reset spollers__title">
+											<span>Можно&nbsp;ли сдать квартиру по&nbsp;доверенности?</span>
+											<svg width="13" height="6" viewBox="0 0 13 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M12 0.5L6.5 5.5L1 0.5" stroke="#FAFAFA" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+											</svg>
+										</button>
+										<div class="spollers__body" data-spollers-body hidden>
+											<p>
+												Сдавать квартиру по&nbsp;доверенности, конечно, можно, но&nbsp;только при наличии нотариально заверенной доверенности. Оставьте заявку на&nbsp;сайте,
+												и&nbsp;мы&nbsp;вам подробно расскажем, как это сделать.
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="qr">
+					<div class="container qr__container">
+						<img loading="lazy" src="./img/keys.png" width="418" height="150" class="" alt="" />
+						<h2 class="qr__title">
+							«Как дома» в вашем смартфоне
+						</h2>
+						<div class="qr__text">
+							<p>
+								Скачайте приложение, чтобы всё самое нужное всегда
+								<br />
+								было под рукой
+							</p>
+						</div>
+						<div class="qr__block">
+							<img loading="lazy" src="./img/qr.svg" width="190" height="190" class="" alt="" />
+						</div>
+					</div>
+				</section>
+			</main>
+			<footer class="footer mt-[170px]">
+				<div class="container">
+					<div class="footer__wrapper">
+						<div class="footer__col">
+							<h3 class="footer__subtitle">
+								Документы
+							</h3>
+							<ul class="footer__list list-reset">
+								<li class="footer__item">
+									<a href="#" class="footer__link">
+										Договор аренды
+									</a>
+								</li>
+								<li class="footer__item">
+									<a href="#" class="footer__link">
+										Условия для собственника
+									</a>
+								</li>
+								<li class="footer__item">
+									<a href="#" class="footer__link">
+										Условия для арендатора
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="footer__col">
+							<h3 class="footer__subtitle">
+								Документы
+							</h3>
+							<ul class="footer__list list-reset">
+								<li class="footer__item">
+									<a href="#" class="footer__link">
+										Договор аренды
+									</a>
+								</li>
+								<li class="footer__item">
+									<a href="#" class="footer__link">
+										Условия для собственника
+									</a>
+								</li>
+								<li class="footer__item">
+									<a href="#" class="footer__link">
+										Условия для арендатора
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="footer__col">
+							<h3 class="footer__subtitle">
+								Документы
+							</h3>
+							<ul class="footer__list list-reset">
+								<li class="footer__item">
+									<a href="#" class="footer__link">
+										Договор аренды
+									</a>
+								</li>
+								<li class="footer__item">
+									<a href="#" class="footer__link">
+										Условия для собственника
+									</a>
+								</li>
+								<li class="footer__item">
+									<a href="#" class="footer__link">
+										Условия для арендатора
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="footer__col">
+							<h3 class="footer__subtitle">
+								Документы
+							</h3>
+							<ul class="footer__list list-reset">
+								<li class="footer__item">
+									<a href="#" class="footer__link">
+										Договор аренды
+									</a>
+								</li>
+								<li class="footer__item">
+									<a href="#" class="footer__link">
+										Условия для собственника
+									</a>
+								</li>
+								<li class="footer__item">
+									<a href="#" class="footer__link">
+										Условия для арендатора
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="footer__bottom">
+						<p>
+							© ООО «Как дома»
+						</p>
+					</div>
+				</div>
+			</footer>
+		</div>
 
-        <div class="advantages__card advantages-card-primary">
-            <h3 class='advantages-card-primary__title advantages__subtitle title-3'>Наши дизайнеры подготовят 3 дизайн-проекта на выбор</h3>
-            <picture>
-                <source srcset="./img/advantages-image-2.webp" type="image/webp">
-                <img loading="lazy" src="./img/advantages-image-2.jpg" width="422" height="330" alt="">
-            </picture>
-        </div>
-        <div class="advantages__card advantages-card-second">
-            <picture>
-                <source srcset="./img/advantages-image-3.webp" type="image/webp">
-                <img loading="lazy" src="./img/advantages-image-3.jpg" width="267" height="330" alt="">
-            </picture>
-            <h3 class='advantages-card-second__title advantages__subtitle title-3'>Наши подрядчики сделают качественный ремонт по выбранному дизайн-проекту строго исходя из желаемого бюджета</h3>
-        </div>
-        <div class="advantages__card advantages-card-third">
-            <picture>
-                <source srcset="./img/advantages-image-4.webp" type="image/webp">
-                <img loading="lazy" src="./img/advantages-image-4.jpg" width="1017" height="330" alt="">
-            </picture>
-            <h3 class='advantages-card-third__title advantages__subtitle title-3'>Наши специалисты подключат квартиру к системе «Как Дома» и сразу возьмут под контроль все необходимые для сдачи в аренду процессы</h3>
-        </div>
-
-    </div>
-</section>
-            <section class='comparison'>
-    <svg class='comparison__svg' width="284" height="280" viewBox="0 0 284 280" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M108.078 1.44224C117.813 27.1385 122.471 70.744 112.659 90.2686C100.716 114.029 80.0389 135.286 47.7359 146.179C37.6397 149.583 9.09903 155.92 2.98876 135.735C-2.388 117.973 7.7155 100.582 18.2812 89.3902C37.3318 69.2103 67.3635 54.0213 101.56 45.2189C124.572 39.2956 161.431 32.4985 195.759 48.7179C240.139 69.6863 233.578 108.159 229.74 126.978C220.541 172.089 196.576 215.115 160.745 247.332C145.228 261.285 117.689 280.019 83.2674 278.117C55.5532 276.586 57.9432 254.078 60.6122 246.845C72.5798 214.411 105.66 187.905 140.514 169.078C172.247 151.937 256.38 138.467 310.049 145.359" stroke="black" stroke-width="2.74131" stroke-linecap="round" />
-      </svg>
-    <div class="container-second">
-        <h2 class='comparison__title title-2'>
-            Сравните <span>сами</span>
-        </h2>
-        <div class="comparison__text">
-            <p>
-                Ни один агент не предоставит такой сервис и поддержку, как мы
-            </p>
-        </div>
-        <div class="comparison__wrapper">
-            <div class="comparison__card">
-                <span>Бесконтактное заселение</span>
-                <span>нет</span>
-                <span>да</span>
-            </div>
-            <div class="comparison__card">
-                <span>Круглосуточный контакт-центр</span>
-                <span>нет</span>
-                <span>да</span>
-            </div>
-            <div class="comparison__card">
-                <span>Страхование квартиры</span>
-                <span>нет</span>
-                <span>да</span>
-            </div>
-            <div class="comparison__card">
-                <span>Проверка арендатора</span>
-                <span>нет</span>
-                <span>да</span>
-            </div>
-            <div class="comparison__card">
-                <span>Подготовка квартиры к сдаче</span>
-                <span>нет</span>
-                <span>да</span>
-            </div>
-            <div class="comparison__card">
-                <span>Отельный сервис</span>
-                <span>нет</span>
-                <span>да</span>
-            </div>
-            <div class="comparison__card">
-                <span>Личный кабинет инвестора</span>
-                <span>нет</span>
-                <span>да</span>
-            </div>
-        </div>
-        
-    </div>
-</section>
-            <section class='applic-form'>
-    <div class="container-second">
-        <h2 class='applic-form__title title-2'>
-            Остались вопросы?
-        </h2>
-        <div class="applic-form__text">
-            <p>
-                Оставьте заявку — свяжемся с вами, уточним детали и предложим выгодные варианты сотрудничества
-            </p>
-        </div>
-        <form action="#" class="applic-form__form form-primary">
-            <label class="form-primary__label label-primary">
-                <input type="text" name="Имя" class="input-reset input-primary label-primary__input" placeholder="Имя">
-            </label>
-            <label class="form-primary__label label-primary">
-                <input type="email" name="email" class="input-reset input-primary label-primary__input" placeholder="E-mail (необязательно)">
-            </label>
-            <label class="form-primary__label label-primary">
-                <input type="tel" name="phone" class="input-reset input-primary label-primary__input" placeholder="Телефон">
-            </label>
-            <div class="form-primary__agree checkbox">
-                <input id="c_1" class="checkbox__input" type="checkbox" value="1">
-                <label for="c_1" class="checkbox__label">
-                    <span class="checkbox__text">
-                        Соглашаюсь на&nbsp;<a href="#">обработку персональных данных</a>
-                    </span>
-                </label>
-            </div>
-            <button type="submit" class="applic-form__btn btn btn-reset btn-primary form-primary__btn">
-                Оставить заявку
-            </button>
-        </form>
-    </div>
-</section>
-            <section class="faq">
-    <div class="container-second">
-        <div class="faq__wrapper">
-            <div class="faq__content">
-                <h2 class="faq__title">
-                    FAQ
-                </h2>
-                <div data-spollers data-spollers-mode="one" class="spollers">
-                    <div class="spollers__item" data-spollers-item>
-                        <button type="button" data-spollers-btn class="btn btn-reset spollers__title">
-                            <span>Сколько это стоит?</span>
-                            <svg width="13" height="6" viewBox="0 0 13 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 0.5L6.5 5.5L1 0.5" stroke="#FAFAFA" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
-                        </button>
-                        <div class="spollers__body" data-spollers-body hidden>
-                            <p>
-                                Для вас, как собственника, сервис абсолютно бесплатен. Арендатор&nbsp;же оплачивает сумму, указанную в&nbsp;объявлении, которая уже включает в&nbsp;себя комиссию. Например, вы&nbsp;хотите сдавать свою однокомнатную квартиру за&nbsp;30&nbsp;000&nbsp;рублей. В&nbsp;этом случае арендатор платит 33&nbsp;000&nbsp;рублей, включающих&nbsp;5% комиссии (это фиксированный процент, указанный в&nbsp;договоре) и&nbsp;оплату финансовой защиты. Вы&nbsp;получаете свои 30&nbsp;000&nbsp;рублей, а&nbsp;оставшиеся 3&nbsp;000 рублей идут сервису
-                            </p>
-                            <p>
-                                При посуточном управлении вашей недвижимости сервис &laquo;Как Дома&raquo; взимает комиссию 10&ndash;15% от&nbsp;цены брони
-                            </p>
-                        </div>
-                    </div>
-                    <div class="spollers__item" data-spollers-item>
-                        <button type="button" data-spollers-btn class="btn btn-reset spollers__title">
-                            <span>Какие квартиры подходят для сервиса?</span>
-                            <svg width="13" height="6" viewBox="0 0 13 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 0.5L6.5 5.5L1 0.5" stroke="#FAFAFA" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
-                        </button>
-                        <div class="spollers__body" data-spollers-body hidden>
-                            <p>
-                                Практически любая квартира может быть сдана через наш сервис. Главное условие: в&nbsp;ней не&nbsp;должно быть ваших личных вещей. Помните, что арендаторы хотят чувствовать себя как дома, а&nbsp;ваши вещи будут напоминать&nbsp;им, что квартира съёмная. Также в&nbsp;квартире должен быть минимальный набор мебели и&nbsp;техники, кухонный гарнитур. Желательно наличие стабильного интернета. Мы&nbsp;подскажем, что стоит убрать или добавить, чтобы выделить вашу квартиру среди других и&nbsp;показать все её&nbsp;преимущества.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="spollers__item" data-spollers-item>
-                        <button type="button" data-spollers-btn class="btn btn-reset spollers__title">
-                            <span>Кто платит налоги за&nbsp;сдачу квартиры в&nbsp;аренду?</span>
-                            <svg width="13" height="6" viewBox="0 0 13 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 0.5L6.5 5.5L1 0.5" stroke="#FAFAFA" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
-                        </button>
-                        <div class="spollers__body" data-spollers-body hidden>
-                            <p>
-                                Сервис не&nbsp;занимается подачей налоговой отчётности и&nbsp;оплатой налогов. Это ваша ответственность как собственника жилья.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="spollers__item" data-spollers-item>
-                        <button type="button" data-spollers-btn class="btn btn-reset spollers__title">
-                            <span>Зачем нужна финансовая защита?</span>
-                            <svg width="13" height="6" viewBox="0 0 13 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 0.5L6.5 5.5L1 0.5" stroke="#FAFAFA" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
-                        </button>
-                        <div class="spollers__body" data-spollers-body hidden>
-                            <p>
-                                Она послужит вам &laquo;подушкой безопасности&raquo; в&nbsp;случае непредвиденных ситуаций с&nbsp;квартирой. Например, если арендаторы внезапно съедут, сломают мебель или зальют соседей, мы&nbsp;компенсируем вам расходы на&nbsp;ремонт в&nbsp;пределах установленных лимитов.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="spollers__item" data-spollers-item>
-                        <button type="button" data-spollers-btn class="btn btn-reset spollers__title">
-                            <span>Можно&nbsp;же сдать квартиру самостоятельно?</span>
-                            <svg width="13" height="6" viewBox="0 0 13 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 0.5L6.5 5.5L1 0.5" stroke="#FAFAFA" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
-                        </button>
-                        <div class="spollers__body" data-spollers-body hidden>
-                            <p>
-                                Сдавать квартиру самостоятельно&nbsp;&mdash; это долго и&nbsp;хлопотно. С&nbsp;сервисом &laquo;Как дома&raquo; вы&nbsp;получите массу преимуществ:
-                            </p>
-                            <p>
-                                &mdash;&nbsp;cдача квартиры произойдёт быстрее, так как арендаторы не&nbsp;платят комиссию риелтору и&nbsp;депозит
-                               <br> &mdash;&nbsp;вы&nbsp;сэкономите время, потому что мы&nbsp;самостоятельно подберём подходящих арендаторов. Вам останется только выбрать наиболее подходящего кандидата
-                                <br> &mdash;&nbsp;вы&nbsp;будете защищены от&nbsp;финансовых потерь, ведь мы&nbsp;выплатим компенсацию за&nbsp;любой ущерб, нанесённый арендаторами
-                                <br> &mdash;&nbsp;мы&nbsp;решим все бытовые вопросы, не&nbsp;отвлекая вас от&nbsp;личных дел
-                            </p>
-                            <p>
-                                И&nbsp;все это&nbsp;&mdash; абсолютно бесплатно для вас.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="spollers__item" data-spollers-item>
-                        <button type="button" data-spollers-btn class="btn btn-reset spollers__title">
-                            <span>Можно&nbsp;ли не&nbsp;отдавать ключи от&nbsp;квартиры?</span>
-                            <svg width="13" height="6" viewBox="0 0 13 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 0.5L6.5 5.5L1 0.5" stroke="#FAFAFA" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
-                        </button>
-                        <div class="spollers__body" data-spollers-body hidden>
-                            <p>
-                                Вы&nbsp;можете оставить ключи у&nbsp;себя. В&nbsp;этом случае мы&nbsp;будем согласовывать с&nbsp;вами каждый показ, что может занять больше времени. Вам, скорее всего, придётся лично присутствовать на&nbsp;просмотрах. Помните, что мы&nbsp;покажем квартиру только потенциальным арендаторам и&nbsp;без вашего согласия никто в&nbsp;неё не&nbsp;заселится.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="spollers__item" data-spollers-item>
-                        <button type="button" data-spollers-btn class="btn btn-reset spollers__title">
-                            <span>Какие документы нужно будет подписать?</span>
-                            <svg width="13" height="6" viewBox="0 0 13 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 0.5L6.5 5.5L1 0.5" stroke="#FAFAFA" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
-                        </button>
-                        <div class="spollers__body" data-spollers-body hidden>
-                            <p>
-                                Два документа даём на&nbsp;подпись: соглашение о&nbsp;сотрудничестве с&nbsp;сервисом (онлайн в&nbsp;личном кабинете) и&nbsp;договор аренды с&nbsp;выбранным арендатором. Мы&nbsp;подготовим договор, вам останется только подписать его. Все документы доступны на&nbsp;сайте, можете ознакомиться с&nbsp;ними заранее.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="spollers__item" data-spollers-item>
-                        <button type="button" data-spollers-btn class="btn btn-reset spollers__title">
-                            <span>Сколько занимает поиск арендаторов?</span>
-                            <svg width="13" height="6" viewBox="0 0 13 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 0.5L6.5 5.5L1 0.5" stroke="#FAFAFA" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
-                        </button>
-                        <div class="spollers__body" data-spollers-body hidden>
-                            <p>
-                                Мы&nbsp;знаем, как быстро найти арендаторов. В&nbsp;среднем они заселяются в&nbsp;квартиру через 10&nbsp;дней после заключения договора. Но&nbsp;у&nbsp;нас были случаи, когда арендаторы находились лишь через 2&nbsp;часа! Мы&nbsp;успешно продвигаем объявления и&nbsp;привлекаем арендаторов. Наш менеджер оценит вашу квартиру и&nbsp;подскажет как ускорить поиск.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="spollers__item" data-spollers-item>
-                        <button type="button" data-spollers-btn class="btn btn-reset spollers__title">
-                            <span>Можно&nbsp;ли сдать квартиру по&nbsp;доверенности?</span>
-                            <svg width="13" height="6" viewBox="0 0 13 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 0.5L6.5 5.5L1 0.5" stroke="#FAFAFA" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
-                        </button>
-                        <div class="spollers__body" data-spollers-body hidden>
-                            <p>
-                                Сдавать квартиру по&nbsp;доверенности, конечно, можно, но&nbsp;только при наличии нотариально заверенной доверенности. Оставьте заявку на&nbsp;сайте, и&nbsp;мы&nbsp;вам подробно расскажем, как это сделать.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-            <section class='qr'>
-    <div class="container qr__container">
-        <img loading="lazy" src="./img/keys.png" width='418' height='150' class="" alt="">
-        <h2 class="qr__title">
-            «Как дома» в вашем смартфоне
-        </h2>
-        <div class="qr__text">
-            <p>
-                Скачайте приложение, чтобы всё самое нужное всегда
-                <br> было под рукой
-            </p>
-        </div>
-        <div class="qr__block">
-            <img loading="lazy" src="./img/qr.svg" width='190' height='190' class="" alt="">
-        </div>
-    </div>
-</section>
-        </main>
-        <footer class="footer mt-[170px]">
-    <div class="container">
-        <div class="footer__wrapper">
-            <div class="footer__col">
-                <h3 class="footer__subtitle">
-                    Документы
-                </h3>
-                <ul class="footer__list list-reset">
-                    <li class="footer__item">
-                        <a href="#" class='footer__link'>
-                            Договор аренды
-                        </a>
-                    </li>
-                    <li class="footer__item">
-                        <a href="#" class='footer__link'>
-                            Условия для собственника
-                        </a>
-                    </li>
-                    <li class="footer__item">
-                        <a href="#" class='footer__link'>
-                            Условия для арендатора
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="footer__col">
-                <h3 class="footer__subtitle">
-                    Документы
-                </h3>
-                <ul class="footer__list list-reset">
-                    <li class="footer__item">
-                        <a href="#" class='footer__link'>
-                            Договор аренды
-                        </a>
-                    </li>
-                    <li class="footer__item">
-                        <a href="#" class='footer__link'>
-                            Условия для собственника
-                        </a>
-                    </li>
-                    <li class="footer__item">
-                        <a href="#" class='footer__link'>
-                            Условия для арендатора
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="footer__col">
-                <h3 class="footer__subtitle">
-                    Документы
-                </h3>
-                <ul class="footer__list list-reset">
-                    <li class="footer__item">
-                        <a href="#" class='footer__link'>
-                            Договор аренды
-                        </a>
-                    </li>
-                    <li class="footer__item">
-                        <a href="#" class='footer__link'>
-                            Условия для собственника
-                        </a>
-                    </li>
-                    <li class="footer__item">
-                        <a href="#" class='footer__link'>
-                            Условия для арендатора
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="footer__col">
-                <h3 class="footer__subtitle">
-                    Документы
-                </h3>
-                <ul class="footer__list list-reset">
-                    <li class="footer__item">
-                        <a href="#" class='footer__link'>
-                            Договор аренды
-                        </a>
-                    </li>
-                    <li class="footer__item">
-                        <a href="#" class='footer__link'>
-                            Условия для собственника
-                        </a>
-                    </li>
-                    <li class="footer__item">
-                        <a href="#" class='footer__link'>
-                            Условия для арендатора
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="footer__bottom">
-            <p>
-                © ООО «Как дома»
-            </p>
-        </div>
-    </div>
-</footer>
-    </div>
-
-
-    <div class="modal-container">
-        <div class="modal city" data-modal-target="city">
-    <div class="modal__container">
-        <button type="button" class="modal__close js-modal-close">
-            close
-        </button>
-        <div class="modal__content">
-          
-        </div>
-    </div>
-</div>
-    </div>
-
-</body>
-
-
+		<div class="modal-container">
+			<div class="modal city" data-modal-target="city">
+				<div class="modal__container">
+					<button type="button" class="modal__close js-modal-close">
+						close
+					</button>
+					<div class="modal__content"></div>
+				</div>
+			</div>
+		</div>
+	</body>
 </html>

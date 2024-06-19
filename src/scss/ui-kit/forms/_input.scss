@@ -24,7 +24,7 @@ textarea.input-reset {
     width: 100%;
 
     color: var(--black);
-    font: var(--text-2-500);
+    font-size: var(--default-font);
 
     padding: 0 36px;
 
@@ -49,30 +49,3 @@ textarea.input-reset {
 }
 }
 
-.textarea-primary {
-    width: 100%;
-    --height: 206px;
-    min-height: var(--height);
-    max-height: var(--height);
-    padding: 24px 26px;
-    background: #F8FAFC;
-    color: var(--dark);
-    border: 1px solid #E0E7FF;
-    border-radius: 22px;
-    font: var(--text-2-500);
-    transition: border $transitionSpeed $transitionFunction;
-
-    &::placeholder {
-        color: #9EACD8;
-    }
-
-    &.focus-visible {
-        border: 1px solid var(--dark);
-    }
-
-@media (max-width:$desktop){
-    --height: 125px;
-    padding: 16px 18px;
-    border-radius: 16px; 
-}
-}

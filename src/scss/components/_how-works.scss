@@ -45,8 +45,10 @@ z-index: 2;
 
     &__text {
         margin-top: 24px;
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 1.35;
+        p{
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 1.35;
+        }
     }
 }
