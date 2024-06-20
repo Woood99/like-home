@@ -1,72 +1,83 @@
-.tenant-banner{
+.tenant-banner {
     margin-top: 184px;
     --gap-bottom: 100px;
 
     min-height: calc(800px + var(--gap-bottom));
-    height: calc(100vh + var(--gap-bottom));
-    max-height: calc(2400px + var(--gap-bottom));
+    height: calc(80vh + var(--gap-bottom));
+    max-height: calc(1800px + var(--gap-bottom));
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 100px 100px 0 0;
-    &__wrapper{
+
+    &__wrapper {
         max-width: 575px;
         margin-left: auto;
         transform: translateY(200px);
-        @media (max-width:$desktop){
-             transform: translateY(65px); 
-             margin: 0 auto;
 
-             display: flex;
-             flex-direction: column;
-             align-items: center;
+        @media (max-width:$desktop) {
+            transform: translateY(65px);
+            margin: 0 auto;
 
-             position: relative;
-             z-index: 2;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            position: relative;
+            z-index: 2;
         }
     }
-    &__title{
+
+    &__title {
         line-height: 1.24;
-        span{
+
+        span {
             color: #F34D24;
         }
-        @media (max-width:$desktop){
-             text-align: center; 
-             color: var(--white);
+
+        @media (max-width:$desktop) {
+            text-align: center;
+            color: var(--white);
         }
     }
-    &__btn{
+
+    &__btn {
         margin-top: 48px;
         padding: 0 97px;
-        @media (max-width:$desktop){
-             margin: 48px 0 0;
+
+        @media (max-width:$desktop) {
+            margin: 48px 0 0;
         }
-        @media (max-width:$mobile-max){
-             width: 100%;
-             padding: 0 24px; 
+
+        @media (max-width:$mobile-max) {
+            width: 100%;
+            padding: 0 24px;
         }
     }
-    @media (max-width:$desktop){
-         margin-top: 85px; 
-         border-radius: 45px 45px 0 0;
+
+    @media (max-width:$desktop) {
+        margin-top: 85px;
+        border-radius: 45px 45px 0 0;
 
 
-         min-height: auto;
-         height: 600px;
-         max-height: none;
+        min-height: auto;
+        height: 600px;
+        max-height: none;
 
-         position: relative;
+        position: relative;
 
-         z-index: 2;
-         overflow: hidden;
-         &::before{
+        z-index: 2;
+        overflow: hidden;
+
+        &::before {
             content: '';
             position: absolute;
             inset: 0;
-            background-color: rgba(0,0,0,0.2);
+            background-color: rgba(0, 0, 0, 0.2);
             z-index: 1;
-         }
+        }
     }
-    @media (max-width:$smallTablet-max){
+
+    @media (max-width:$smallTablet-max) {
         height: 450px;
     }
 }
